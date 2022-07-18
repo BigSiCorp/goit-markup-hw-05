@@ -248,31 +248,34 @@ nav > a[href] {
 }
 .advantages-list .photo-item {
     position: relative;
-
+    display: block;
+    height: 100%;
     width: 370px;
     margin-left: 30px;
+}
+.advantages-list .photo-item img {
+    display: block;
 }
 .advantages-list .photo-item:first-child {
     margin-left: 0;
 }
-.advantages-list .photo-descript {
+.block-descript {
     content: '';
-
+    
     position: absolute;
     
     left: 0;
-    top: 224px;
+    bottom: 0;
     width: 100%;
-    
+    height: 70px;
+        
     background: rgba(47, 48, 58, 0.8);
 }
 .advantages-list .photo-descript {
     min-width: 100%;
-    height: 70px;
     margin: 0;
-    padding-top: 27px;
+    padding: 27px;
     
-
   font-weight: 700;
   font-style: normal;
   line-height: 1.14;
