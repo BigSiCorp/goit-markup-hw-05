@@ -83,7 +83,7 @@ nav > a[href] {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     display: block;
     width: 100%;
@@ -529,21 +529,29 @@ footer {
     padding-left: 0;
     flex-grow: 1;
 }
-footer > .container > a {
+footer > .container .logo {
     display: inline-block;
     min-width: 145px;
     padding-bottom: 20px;
 }
 .map {
     color: var(--white-color);
+    margin-bottom: 9px;
 }
-address a {
+address .contact,
+address .map {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
     text-decoration: none;
 }
+address .contact:first-child {
+    margin-bottom: 9px;
+}
 .invitation {
+    padding-top: 12px;
+    margin-bottom: 20px;
+
     text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
